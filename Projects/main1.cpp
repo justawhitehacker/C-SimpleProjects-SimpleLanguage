@@ -31,9 +31,7 @@ int main(int argc, char** argv[])
 
 		int type = static_cast<int>(it->type);
 		if (type >= static_cast<int>(TokenType::KW_ADD) && type <= static_cast<int>(TokenType::KW_NOT))
-		{
 			keywords.push_back(it->type);
-		}
 		
 		std::cout << "Token: " << type << ", Lexeme: " << it->lexeme << std::endl;
 	}
